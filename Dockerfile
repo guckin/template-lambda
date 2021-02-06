@@ -1,9 +1,5 @@
 FROM public.ecr.aws/lambda/nodejs:12 as build
 
-RUN apt-get update && \
-    apt-get -y install zip && \
-    apt-get clean
-
 COPY package.json package-lock.json src/
 
 WORKDIR ./src
