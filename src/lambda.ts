@@ -1,6 +1,6 @@
 
-export type ResponseContract = 'Hello World';
+export type ResponseContract = 'Hello World!';
 
 export async function handler(): Promise<ResponseContract> {
-    return 'Hello World';
+    return 'Hello World!';
 }
