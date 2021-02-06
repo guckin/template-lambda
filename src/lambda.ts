@@ -3,8 +3,7 @@ export type ResponseContract = {
     hello: 'world';
 }
 
-export function handler(): ResponseContract {
-    console.log('Hello World');
+export async function handler(): Promise<ResponseContract> {
     return {
         hello: 'world'
     };
