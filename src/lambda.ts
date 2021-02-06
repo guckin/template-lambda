@@ -1,4 +1,11 @@
-export function handler(): 'Hello World' {
+
+export type ResponseContract = {
+    hello: 'world';
+}
+
+export function handler(): ResponseContract {
     console.log('Hello World');
-    return 'Hello World';
+    return {
+        hello: 'world'
+    };
 }
