@@ -1,0 +1,16 @@
+.git
+.gitignore
+README.md
+
+Dockerfile
+.dockerignore
+
+.github
+
+node_modules
+
+build
+dist
+
+.idea
+.vscode
