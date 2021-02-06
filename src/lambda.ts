@@ -1,4 +1,4 @@
 export function handler(): 'Hello World' {
-    console.log('hello world');
+    console.log('Hello World');
     return 'Hello World';
 }
