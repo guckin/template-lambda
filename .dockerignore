@@ -9,8 +9,5 @@ Dockerfile
 
 node_modules
 
-build
-dist
-
 .idea
 .vscode

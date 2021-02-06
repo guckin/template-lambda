@@ -17,10 +17,8 @@ ARG TIMESTAMP
 
 RUN npm run test
 
-FROM test AS deploy
+FROM test AS run
 
-RUN cp -rp ./build/src/ ./dist && cp -rp ./node_modules ./dist && zip -r ./lambda.zip ./dist/*
+RUN cp ./build/src/* /var/task/
 
-FROM deploy
-
-COPY --from=deploy /src/lambda.zip ./lambda.zip
+CMD ["lambda.handler"]
