@@ -1,3 +1,3 @@
-export function handler(): string {
+export function handler(): 'Hello World' {
     return 'Hello World';
 }
