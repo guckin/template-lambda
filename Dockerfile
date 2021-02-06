@@ -1,4 +1,4 @@
-FROM node:12.14.1-slim AS build
+FROM public.ecr.aws/lambda/nodejs:12 as build
 
 RUN apt-get update && \
     apt-get -y install zip && \
