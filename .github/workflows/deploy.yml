@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: docker build --tag ${{ github.repository.name }} .
+      - run: docker build --tag ${{ github.event.repository.name }} .
       - name: Build and push to ECR
         id: ecr
         uses: jwalton/gh-ecr-push@v1
@@ -20,4 +20,4 @@ jobs:
           secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           region: us-west-2
           local-image: lambda-template
-          image: ${{ github.repository.name }}:${{ github.sha }}
+          image: ${{ github.event.repository.name }}:${{ github.sha }}
