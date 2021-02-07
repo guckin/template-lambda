@@ -46,6 +46,7 @@ jobs:
 
       - name: Build
         run: |
+          sam validate
           sam build
 
       - name: Deploy
