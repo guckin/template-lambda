@@ -1,4 +1,4 @@
-FROM public.ecr.aws/lambda/nodejs:12 as build
+FROM public.ecr.aws/lambda/nodejs:14 as build
 
 COPY package.json package-lock.json src/
 
