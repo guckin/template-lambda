@@ -15,7 +15,6 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       PackageType: Image
-      ImageUri: HelloWorldFunction=084882962555.dkr.ecr.us-west-2.amazonaws.com/template-lambda
     Metadata:
       DockerTag: nodejs14.x-v1
       DockerContext: .
