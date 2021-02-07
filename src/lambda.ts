@@ -1,3 +1,5 @@
-export async function handler(): Promise<string> {
-    return 'HELLO WORLD!';
+export type Greeting = `Hello ${string}`;
+
+export async function handler(): Promise<Greeting> {
+    return 'Hello World';
 }
