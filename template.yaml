@@ -15,6 +15,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       PackageType: Image
+      ImageUri: ECR URL
     Metadata:
       DockerTag: nodejs14.x-v1
       DockerContext: .
