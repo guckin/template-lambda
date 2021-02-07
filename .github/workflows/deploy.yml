@@ -50,4 +50,4 @@ jobs:
 
       - name: Deploy
         run: |
-          sam deploy --no-confirm-changeset --image_repository 084882962555.dkr.ecr.us-west-2.amazonaws.com/template-lambda
+          sam deploy --no-confirm-changeset --image_repository ${{ secrets.ECR_REPO_URL }}
