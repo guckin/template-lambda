@@ -1,3 +1,3 @@
 export async function handler(): Promise<string> {
-    return 'HelloWorld';
+    return 'HELLO WORLD!';
 }
