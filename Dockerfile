@@ -19,6 +19,5 @@ RUN npm run test
 
 FROM test AS run
 
-RUN cp ./build/src/* /var/task/
-
-CMD ["lambda.handler"]
+RUN cp -rp ./build/src/* /var/task/
+RUN cp -rp ./node_modules/* /var/task/

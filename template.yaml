@@ -16,6 +16,8 @@ Resources:
     Properties:
       PackageType: Image
       ImageUri: ECR URL
+      ImageConfig:
+        Command: [ "lambdas.handler" ]
     Metadata:
       DockerTag: nodejs14.x-v1
       DockerContext: .
