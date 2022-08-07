@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  CD:
+  CI-CD:
 
     runs-on: ubuntu-latest
 

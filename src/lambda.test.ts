@@ -1,3 +1,7 @@
+import {handler} from './lambda';
+
 describe('lambda', () => {
-    it('does nothing', () => {});
+    it('returns nothing', () => {
+        expect(handler()).toBeFalsy();
+    });
 });
