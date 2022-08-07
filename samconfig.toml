@@ -6,7 +6,6 @@ stack_name = "template-lambda"
 s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-6ge24nirg7k8"
 s3_prefix = "template-lambda"
 region = "us-west-2"
-profile = "personal"
 confirm_changeset = true
 capabilities = "CAPABILITY_IAM"
 image_repositories = []
